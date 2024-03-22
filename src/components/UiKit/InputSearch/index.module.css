@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.autocompleteContainer {
+  height: 48px;
+}
+
+.customInput {
+  width: 100% !important;
+  padding: 14px 16px;
+  height: 48px;
+  border-radius: 16px;
+  background: var(--color-grey15);
+  border: unset;
+  box-shadow: unset !important;
+  cursor: text;
+  transition: 0s;
+}
+
+.customInput ::placeholder {
+  padding-left: 20px;
+  color: var(--color-grey20);
+  background: url(../assets/SearchIcon.svg) no-repeat;
+}
+
+.customInput :focus::placeholder {
+  opacity: 0;
+}
+
+.customInput :global(.ant-input) {
+  text-overflow: ellipsis;
+  background-color: var(--color-grey15);
+  color: var(--color-grey30);
+}
+
+:global(.ant-select-open) .customInput {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.customPopup {
+  position: sticky;
+  padding: 0;
+  background-color: var(--color-grey15);
+  box-shadow: none;
+  border-radius: 0px 0px 16px 16px;
+  max-width: 264px;
+  z-index: 1;
+}
+
+.customPopup :global(.ant-select-item) {
+  padding: 0;
+  border-radius: 0;
+}
+
+.customOption {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 16px;
+  min-height: 48px;
+  color: var(--color-grey30);
+  border-bottom: 1px solid var(--color-grey16);
+}
+
+.address {
+  line-height: 20px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.area {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: var(--color-grey20);
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.rangeButtonsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 48px;
+  column-gap: 4px;
+}
+
+.label {
+  margin-bottom: 8px;
+  color: var(--color-grey20);
+  font-size: 14px;
+}

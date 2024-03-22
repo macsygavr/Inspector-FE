@@ -1,0 +1,161 @@
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-grey10);
+}
+
+.footerUp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  padding-top: 48px;
+}
+
+.footerMiddle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1280px;
+  padding: 24px 64px;
+  row-gap: 20px;
+}
+
+.footerDown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  padding: 0 64px;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.separator {
+  border-bottom: 1px solid #e8e5e3;
+  width: calc(100% - 128px);
+  max-width: 1152px;
+}
+
+.email {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.12px;
+  color: var(--color-orange20);
+  cursor: pointer;
+  width: min-content;
+}
+
+.logo {
+  padding: 0 64px;
+  display: flex;
+  align-items: flex-end;
+  height: 32px;
+}
+
+.socialMediaContainer {
+  display: flex;
+  align-items: center;
+  margin: 0px 64px;
+  column-gap: 44px;
+}
+
+.socialMediaButton {
+  padding: 0;
+}
+
+.span {
+  color: var(--color-grey20);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+
+.objectsButton {
+  padding: 0;
+  justify-content: start;
+  width: min-content;
+}
+
+.middleTitle {
+  color: var(--color-grey20);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+
+.citiesBtns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1280px;
+  column-gap: 24px;
+  row-gap: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    padding: 0 32px;
+  }
+
+  .socialMediaContainer {
+    margin: 0 32px;
+    column-gap: 36px;
+  }
+
+  .separator {
+    width: calc(100% - 64px);
+  }
+
+  .footerMiddle {
+    padding: 24px 32px;
+  }
+
+  .footerDown {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin: 32px 16px 24px;
+    padding: 0;
+  }
+
+  .socialMediaContainer {
+    margin: 0px 16px 16px;
+    column-gap: 28px;
+  }
+
+  .footerUp {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .footerDown {
+    margin: 0 16px;
+  }
+
+  .citiesBtns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 16px;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .footerMiddle {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .citiesBtns {
+    grid-template-columns: 1fr 1fr;
+  }
+}

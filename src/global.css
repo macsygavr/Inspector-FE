@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: min-content;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+:root {
+  --color-grey10: #f8f7fa;
+  --color-grey15: #f1f0f5;
+  --color-grey16: #e8e5e3;
+  --color-grey20: #a3a3a3;
+  --color-grey30: #525252;
+  --color-grey50: #292929;
+
+  --color-orange10: #ffece0;
+  --color-orange15: #ffddc7;
+  --color-orange17: #f89657;
+  --color-orange20: #ff6503;
+  --color-orange30: #ed5c00;
+  --color-orange40: #ff65037a;
+
+  --color-green50: #37C33D;
+
+  --color-red50: #ed5a5a;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/Inter-Thin.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/Inter-ExtraLight.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Inter-Light.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Inter-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Inter-Medium.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Inter-SemiBold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Inter-Bold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/Inter-ExtraBold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/Inter-Black.ttf") format("ttf");
+  font-display: swap;
+}

@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceCardContainer {
+  margin-top: 24px;
+}
+
+.button {
+  margin: 32px 0px 8px;
+}

@@ -1,0 +1,83 @@
+.code {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.code > input {
+  width: 100%;
+  height: 48px;
+  color: transparent;
+  border: unset;
+  caret-color: transparent;
+}
+
+.code > input:focus-visible {
+  outline: unset;
+}
+
+.code > input:focus-visible::placeholder {
+  color: transparent;
+}
+
+.withError * {
+  color: var(--color-red50) !important;
+}
+
+.withError > input {
+  color: transparent !important;
+}
+
+.error {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  color: var(--color-red50);
+}
+
+.error > input {
+  color: transparent !important;
+}
+
+.spanContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 128px);
+}
+
+.codeSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  padding: 5px;
+  color: var(--color-grey30);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 16px;
+  background: var(--color-grey15);
+  border: unset;
+  cursor: text;
+}
+
+.placeholderZero {
+  color: var(--color-grey20);
+}
+
+@media screen and (max-width: 1024px) {
+  .spanContainer {
+    width: calc(100% - 64px);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .spanContainer {
+    width: calc(100% - 32px);
+  }
+}

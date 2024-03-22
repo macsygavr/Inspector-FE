@@ -1,0 +1,208 @@
+.container {
+  max-width: calc(100vw - 464px);
+  min-width: 343px;
+  border-radius: 2px 16px 2px 2px;
+  overflow: hidden;
+}
+
+.container:focus-visible {
+  outline: none;
+}
+
+.container > * :focus-visible {
+  outline: none;
+}
+
+.container :global(.slick-dots) {
+  position: unset;
+  justify-content: unset;
+  overflow: scroll;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.container :global(.slick-cloned img) {
+  visibility: hidden;
+}
+
+.container :global(.slick-track) {
+  display: flex;
+}
+
+.container :global(.slick-dots.slick-dots-bottom) {
+  display: flex !important;
+  padding: 0;
+  list-style: none !important;
+}
+
+.container :global(.slick-dots li) {
+  margin: 0px 2px;
+  text-indent: 0px;
+  height: auto;
+  width: auto;
+  transition: 0s;
+}
+
+.container :global(.slick-dots li.slick-active) {
+  width: 170px;
+  outline-offset: -2px;
+  outline: 2px solid var(--color-orange20);
+  border-radius: 2px;
+}
+
+.container.disableActiveItem :global(.slick-dots li.slick-active) {
+  border: unset;
+}
+
+.container.overflowHidden :global(.slick-dots.slick-dots-bottom) {
+  overflow: hidden;
+}
+
+.container :global(.slick-dots.slick-dots-bottom::-webkit-scrollbar) {
+  width: 0;
+}
+
+.container :global(.slick-active) .smallImgContainer {
+  height: 127px;
+}
+
+.container :global(.slick-dots li:first-child) {
+  min-width: 170px;
+  overflow: hidden;
+  margin-left: 0px;
+  border-radius: 2px 2px 2px 16px;
+}
+
+.container :global(.slick-dots li:first-child .smallImgContainer) {
+  border-radius: 2px 2px 2px 14px;
+  overflow: hidden;
+}
+
+.mainImgContainer {
+  display: flex !important;
+  align-items: center;
+  height: 568px;
+  max-width: calc(100vw - 464px);
+  background: var(--color-grey15);
+  min-width: 343px;
+}
+
+.smallImgContainer {
+  display: flex;
+  align-items: center;
+  height: 127px;
+  background: var(--color-grey15);
+}
+
+.mainImg {
+  width: 100%;
+  min-width: 343px;
+  max-height: 568px;
+  object-fit: contain;
+  cursor: pointer;
+  text-align: center;
+}
+
+.errorContainer {
+  margin-bottom: 30px;
+  border-radius: 2px 16px 2px 16px;
+}
+
+.smallImg {
+  display: flex;
+  width: 170px;
+  max-height: 127px;
+  object-fit: contain;
+  color: rgba(0, 0, 0, 0.88);
+  text-align: center;
+}
+
+.scrollBtnsContainer {
+  display: flex;
+  position: relative;
+  column-gap: 4px;
+  top: 688px;
+  left: calc(100% - 80px);
+  height: 0;
+  z-index: 1;
+}
+
+.scrollBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-orange10);
+  cursor: pointer;
+}
+
+.scrollBtnDisabled {
+  opacity: 0.6;
+  cursor: unset;
+}
+
+.scrollLeftIconContainer {
+  border-radius: 16px 2px 2px 16px;
+}
+
+.scrollRigthIconContainer {
+  border-radius: 2px 16px 16px 2px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: calc(100vw - 400px);
+  }
+
+  .container :global(.slick-dots li.slick-active) {
+    width: 114px;
+  }
+
+  .container :global(.slick-active) .smallImgContainer {
+    height: 85px;
+  }
+
+  .container :global(.slick-dots li:first-child) {
+    min-width: 114px;
+  }
+
+  .mainImgContainer {
+    height: 450px;
+    max-width: calc(100vw - 400px);
+  }
+
+  .smallImgContainer {
+    height: 85px;
+  }
+
+  .mainImg {
+    width: 100%;
+    max-height: 450px;
+  }
+
+  .smallImg {
+    width: 114px;
+    max-height: 85px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: calc(100vw - 64px);
+  }
+
+  .mainImgContainer {
+    max-width: calc(100vw - 64px);
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .container {
+    max-width: calc(100vw - 32px);
+  }
+
+  .mainImgContainer {
+    max-width: calc(100vw - 32px);
+  }
+}

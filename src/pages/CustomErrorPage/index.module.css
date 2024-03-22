@@ -1,0 +1,51 @@
+.offerHeadBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 32px;
+  height: 100%;
+}
+
+.offerTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.offerTitle {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--color-grey50);
+  max-width: 496px;
+}
+
+.offerSubTitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-grey30);
+  margin: 16px 0px 32px;
+  max-width: 496px;
+}
+
+.btn {
+  width: min-content;
+}
+
+@media screen and (max-width: 636px) {
+  .offerHeadBlock {
+    flex-direction: column-reverse;
+    row-gap: 32px;
+  }
+
+  .revizorIconContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

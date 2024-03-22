@@ -1,0 +1,29 @@
+.tag {
+  border-radius: 16px;
+  padding: 2px 8px;
+  width: fit-content;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.small {
+  padding: 4px 8px;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+}
+
+.green {
+  background: var(--color-green50);
+}
+
+.orange {
+  background: var(--color-orange17);
+}
+
+.grey {
+  background: #ffffff;
+  color: var(--color-grey20);
+}

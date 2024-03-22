@@ -1,0 +1,75 @@
+.bigContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-grey30);
+  margin-top: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-grey20);
+  margin-top: 8px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+}
+
+.bigPogressContainer {
+  margin-top: 8px;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  column-gap: 4px;
+}
+
+.smallPogressContainer {
+  display: flex;
+  min-width: 120px;
+  column-gap: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 8px;
+}
+
+.bigProgressSection {
+  display: flex;
+  width: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progressSection {
+  width: 100%;
+  height: 8px;
+  background: var(--color-grey16);
+  border-radius: 2px;
+}
+
+.borderRadiusNone {
+  border-radius: 0px;
+}
+
+.green {
+  background: var(--color-green50);
+}
+
+.yellow:not(:last-child) {
+  background: #ffd000;
+}
+
+.red {
+  background: var(--color-red50);
+}
+
+.grey {
+  background: var(--color-grey16);
+}

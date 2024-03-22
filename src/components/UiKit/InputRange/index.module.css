@@ -1,0 +1,161 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.label {
+  margin-bottom: 8px;
+  color: var(--color-grey20);
+  width: 100%;
+  text-align: start;
+  position: relative;
+  top: 6px;
+  font-size: 14px;
+}
+
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  top: 4px;
+}
+
+.container :global(.ant-slider-handle) {
+  transform: translateX(-110%) !important;
+}
+
+.container :global(.ant-slider) {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.container :global(.ant-slider:hover .ant-slider-handle::after) {
+  box-shadow: none;
+}
+
+.container :global(.ant-slider-rail) {
+  height: 2px;
+  left: -8px;
+  width: calc(100% + 16px);
+  background: var(--color-grey16);
+}
+
+.container :global(.ant-slider-rail:hover) {
+  height: 2px;
+  background: var(--color-grey16);
+}
+
+.container :global(.ant-slider:hover .ant-slider-rail) {
+  height: 2px;
+  background: var(--color-grey16);
+}
+
+.container :global(.ant-slider-track) {
+  height: 2px;
+  background: var(--color-orange20);
+}
+
+.searchRangeSlider :global(.ant-slider-track) {
+  left: -8px !important;
+}
+
+.container :global(.ant-slider-track):hover {
+  height: 2px;
+  background: var(--color-orange20);
+}
+
+.container :global(.ant-slider:hover .ant-slider-track) {
+  height: 2px;
+  background: var(--color-orange20);
+}
+
+.container :global(.ant-slider-handle::after) {
+  border-radius: 0px;
+  box-shadow: none;
+  background: url(../assets/SliderTrailter.svg);
+  width: 20px;
+  height: 12px;
+}
+
+.container :global(.ant-slider-disabled .ant-slider-handle::after) {
+  border-radius: 0px;
+  box-shadow: none;
+  background: url(../assets/SliderTrailterDisabled.svg);
+  width: 20px;
+  height: 12px;
+}
+
+.container :global(.ant-slider-handle:hover::after) {
+  box-shadow: none;
+  inset-inline-start: 0px;
+  inset-block-start: 0px;
+  width: 20px;
+  height: 12px;
+}
+
+.container :global(.ant-slider-disabled .ant-slider-handle::after) {
+  background-color: unset;
+  width: 20px;
+  height: 12px;
+  box-shadow: unset;
+}
+
+.container :global(.ant-slider-handle:focus::after) {
+  box-shadow: none;
+  inset-inline-start: 0px;
+  inset-block-start: 0px;
+  width: 20px;
+  height: 12px;
+}
+
+.slider {
+  width: calc(100% - 16px);
+}
+
+.sliderValues {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 100%;
+  background: var(--color-grey15);
+  border-radius: 16px 16px 2px 2px;
+  margin-bottom: -7px;
+  color: var(--color-grey30);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+}
+
+.hyphen {
+  padding: 0px 5px;
+  color: var(--color-grey20);
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.input {
+  text-align: center;
+  background-color: unset;
+  border: none;
+  font-size: 14px;
+  color: var(--color-grey30);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.unitContainer {
+  cursor: default;
+}

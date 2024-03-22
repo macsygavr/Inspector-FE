@@ -1,0 +1,91 @@
+.customLineTabs {
+  height: 48px;
+  width: min-content;
+  margin: 0 0 16px 0;
+  border-bottom: 2px solid var(--color-grey16);
+}
+
+.customLineTabs :global(.ant-tabs-nav-operations) {
+  width: 0px;
+  visibility: hidden;
+}
+
+.customLineTabs :global(.ant-tabs-nav::before) {
+  border-bottom: 2px solid var(--color-grey16);
+}
+
+.customLineTabs :global(.ant-tabs-tab-btn) {
+  text-shadow: none !important;
+  color: var(--color-grey20);
+}
+
+.customLineTabs :global(.ant-tabs-tab-btn:focus-visible) {
+  outline: none;
+}
+
+.customLineTabs :global(.ant-tabs-tab) {
+  padding: 14px 12px;
+  margin: 0 !important;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.customLineTabs :global(.ant-tabs-nav-list) {
+  display: flex;
+}
+
+.customCardTabs :global(.ant-tabs-nav-list) {
+  padding: 8px;
+  background: var(--color-orange10);
+  border-radius: 16px;
+  column-gap: 9px;
+}
+
+.customCardTabs :global(.ant-tabs-nav) {
+  width: min-content;
+}
+
+.customCardTabs :global(.ant-tabs-tab-btn) {
+  text-shadow: none !important;
+}
+
+.customCardTabs :global(.ant-tabs-tab) {
+  background: none !important;
+  border: none !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.customCardTabs :global(.ant-tabs-tab:not(:first-child)::before) {
+  position: absolute;
+  top: 50%;
+  inset-inline-start: -5px;
+  width: 1px;
+  height: 24px;
+  background-color: rgba(255, 101, 3, 0.24);
+  border-radius: 2px;
+  transform: translateY(-50%);
+  transition: background-color 0.2s;
+  content: "";
+}
+
+.customCardTabs :global(.ant-tabs-nav::before) {
+  border-bottom: none;
+}
+
+.customCardTabs :global(.ant-tabs-tab-btn) {
+  border-radius: 8px;
+  color: var(--color-orange20);
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.customCardTabs :global(.ant-tabs-tab-active .ant-tabs-tab-btn) {
+  background: var(--color-orange20);
+  border-radius: 8px;
+  color: #ffffff !important;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 20px;
+}

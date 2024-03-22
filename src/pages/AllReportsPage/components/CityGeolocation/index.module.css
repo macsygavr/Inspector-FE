@@ -1,0 +1,53 @@
+.geolocationTitleContainer {
+  display: flex;
+  align-items: center;
+}
+
+.geolocationTitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-orange20);
+  padding-left: 4px;
+  cursor: pointer;
+}
+
+.geolocationPopup {
+  width: 264px !important;
+}
+
+.geolocationPopup :global(.ant-popover-inner) {
+  padding: 0 !important;
+}
+
+.geolocationPopupContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.radioContainer {
+  width: 100% !important;
+  row-gap: unset !important;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.radioRow label {
+  padding: 14px 16px;
+  height: 48px;
+}
+
+.radioRow:hover {
+  background: var(--color-grey10);
+  cursor: pointer;
+}
+
+.radioRow:not(:last-child) {
+  border-bottom: 1px solid #e8e5e3;
+}
+
+.pinIconContainer {
+  display: flex;
+  min-width: 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.rangeBtn {
+  height: 16px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+.rangePrimary {
+  background: var(--color-orange20);
+  color: #ffffff;
+}
+
+.rangeSecondary {
+  background: #ffffff;
+  color: var(--color-grey30);
+}

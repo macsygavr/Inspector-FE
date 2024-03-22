@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.label {
+  margin-bottom: 8px;
+  color: var(--color-grey20);
+  font-size: 14px;
+}
+
+.customSelect {
+  width: 100%;
+  height: 48px;
+}
+
+.customSelect :global(.ant-select-selector) {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px !important;
+  height: 48px !important;
+  border-radius: 16px;
+  border: unset !important;
+  box-shadow: unset !important;
+  background: var(--color-grey15) !important;
+}
+
+.customSelect :global(.ant-select-selection-placeholder) {
+  color: var(--color-grey20);
+}
+
+.customSelect :global(.ant-select-item-option-state) {
+  color: var(--color-orange20) !important
+}
+
+.customSelect :global(.ant-select-selection-overflow) {
+  bottom: 4px;
+  flex-wrap: unset;
+  max-width: calc(100% - 20px);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.customSelect :global(.ant-select-selection-overflow::-webkit-scrollbar) {
+  display: none;
+}
+
+.customSelect :global(.ant-select-selection-item-content) {
+  color: var(--color-grey30);
+}
+
+.customSelect :global(.ant-select-selection-item) {
+  color: var(--color-grey30);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.customSelect:global(.ant-select-open .ant-select-selection-item) {
+  color: var(--color-grey20);
+}
+
+.customSelect:global(.ant-select-open .ant-select-selector) {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.customPopup {
+  position: sticky;
+  padding: 0;
+  background-color: var(--color-grey15);
+  box-shadow: none;
+  border-radius: 0px 0px 16px 16px;
+}
+
+.customPopup :global(.ant-select-item) {
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+  min-height: 48px;
+  color: var(--color-grey30);
+  border-bottom: 1px solid var(--color-grey16);
+}
+
+.customPopup :global(.ant-select-item-option-selected) {
+  background-color: unset !important;
+  font-weight: unset !important;
+  color: var(--color-grey30) !important;
+}
+
+.customPopup :global(.ant-select-item-option-content) {
+  white-space: normal;
+  word-wrap: break-word;
+}

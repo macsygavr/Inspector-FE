@@ -1,0 +1,22 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--color-grey10);
+}
+
+.blockTitle {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-grey50);
+  margin-bottom: 8px;
+}
+
+.tooltipIcon {
+  cursor: pointer;
+}

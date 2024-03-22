@@ -1,0 +1,183 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  min-height: 382px;
+  width: 100%;
+  height: 100%;
+  background: var(--color-grey10);
+}
+
+.img {
+  width: 100%;
+  height: 198px;
+  border-radius: 16px 16px 0px 0px;
+  object-fit: cover;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px 16px 16px;
+}
+
+.generalInfo {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-orange20);
+}
+
+.dot {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-grey20);
+}
+
+.floorSpan {
+  white-space: nowrap;
+}
+
+.priceContainer {
+  margin-top: 4px;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-grey50);
+}
+
+.pricePerMeter {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  color: var(--color-grey20);
+}
+
+.addressContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -2px;
+  margin-top: 8px;
+}
+
+.address {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: var(--color-grey30);
+  margin-left: 4px;
+}
+
+.geolocationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  left: -2px;
+  margin-top: 4px;
+  row-gap: 2px;
+}
+
+.metroStation {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: var(--color-grey30);
+  margin-left: 4px;
+}
+
+.metroRow {
+  display: flex;
+}
+
+.time {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: var(--color-grey20);
+  margin-left: 8px;
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  column-gap: 4px;
+  row-gap: 4px;
+}
+
+.checkDateContainer {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: var(--color-grey20);
+}
+
+.skeletonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 12px 16px;
+  row-gap: 12px;
+}
+
+.hidden {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+}
+
+.mockBlock {
+  height: 32px;
+}
+
+.soldTag {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+.soldText {
+  color: var(--color-grey20);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 4px;
+}
+
+.callMeBtnContainer {
+  display: flex;
+  justify-content: center;
+  padding: 0px 16px;
+  position: relative;
+  bottom: 64px;
+  height: 0px;
+}
+
+.callMeBtn {
+  width: 100%;
+  height: 48px;
+}
+
+.bigPadding {
+  padding-bottom: 60px;
+}

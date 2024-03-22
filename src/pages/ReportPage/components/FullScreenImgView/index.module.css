@@ -1,0 +1,160 @@
+.modal {
+  position: unset;
+  margin: 0;
+  width: 100% !important;
+  max-width: 100%;
+  height: 100%;
+  padding-bottom: 0px;
+}
+
+.modal :global(.ant-modal-content) {
+  height: 100%;
+  border-radius: 0px;
+  background: black;
+  padding: 0px;
+}
+
+.modal :global(.ant-carousel):focus-visible {
+  outline: unset !important;
+}
+
+.modal :global(.slick-slider):focus-visible {
+  outline: unset !important;
+}
+
+.modal :global(.slick-list):focus-visible {
+  outline: unset !important;
+}
+
+.modal :global(.slick-track):focus-visible {
+  outline: unset !important;
+}
+
+.modal :global(.slick-slide):focus-visible {
+  outline: unset !important;
+}
+
+.modal :global(.slick-slide > *):focus-visible {
+  outline: unset !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 64px;
+  border-bottom: 1px solid rgba(232, 229, 227, 0.3);
+}
+
+.headerText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.headerBtnsContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.closeIcon {
+  display: flex;
+  cursor: pointer;
+}
+
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.mainImgContainer {
+  display: flex !important;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 64px;
+  height: calc(100vh - 80px);
+}
+
+.mainImgContainer:focus-visible {
+  outline: unset !important;
+}
+
+.mainImg {
+  width: 100%;
+  max-height: calc(100vh - 168px);
+  object-fit: contain;
+  padding: 0px 32px;
+}
+
+.mainImg:focus-visible {
+  outline: unset !important;
+}
+
+.scrollBtnsContainer {
+  display: flex;
+  position: relative;
+  column-gap: 4px;
+  height: 0px;
+  width: 0px;
+  bottom: 48px;
+  left: calc(100vw - 120px);
+}
+
+.scrollBtn {
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-orange10);
+  cursor: pointer;
+}
+
+.scrollLeftIconContainer {
+  border-radius: 16px 2px 2px 16px;
+}
+
+.scrollRigthIconContainer {
+  border-radius: 2px 16px 16px 2px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+  border-top: 1px solid rgba(232, 229, 227, 0.3);
+}
+
+.button {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 16px 32px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    padding: 16px 20px;
+  }
+
+  .mainImgContainer {
+    height: calc(100vh - 134px);
+  }
+
+  .mainImg {
+    padding: 0px;
+  }
+}

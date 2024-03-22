@@ -1,0 +1,29 @@
+.customSwitch {
+  width: 48px;
+  height: 24px;
+  box-shadow: none;
+  transition: none;
+}
+
+.customSwitch:global(.ant-switch-checked .ant-switch-handle) {
+  inset-inline-start: calc(100% - 22px);
+}
+
+.customSwitch :global(.ant-switch-handle) {
+  height: 20px;
+  width: 20px;
+}
+
+.customSwitch :global(.ant-switch-checked .ant-switch-handle) {
+  position: relative;
+  right: 12px;
+}
+
+.customSwitch :global(.ant-switch-handle)::before {
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.customSwitch :global(.ant-wave) {
+  opacity: 0;
+}

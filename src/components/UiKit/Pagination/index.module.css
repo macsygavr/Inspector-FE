@@ -1,0 +1,70 @@
+.container {
+  margin: 10px 0px;
+}
+
+.container :global(.ant-pagination-next) {
+  visibility: hidden;
+  min-width: 0;
+  width: 0;
+}
+
+.container :global(.ant-pagination-prev) {
+  visibility: hidden;
+  min-width: 0;
+  width: 0;
+}
+
+.container :global(.ant-pagination-jump-prev) {
+  border: unset;
+  margin-inline-end: 0px;
+  min-width: unset;
+  height: unset;
+}
+
+.container :global(.ant-pagination-jump-next) {
+  border: unset;
+  margin-inline-end: 0px;
+  min-width: unset;
+  height: unset;
+}
+
+.container :global(.ant-pagination-item) {
+  border: unset;
+  margin-inline-end: 0px;
+  min-width: unset;
+  height: unset;
+}
+
+.container :global(.ant-pagination-item a) {
+  font-weight: 400;
+  color: var(--color-grey20);
+  border-bottom: 2px solid var(--color-grey16);
+  padding: 14px 12px;
+}
+
+.container :global(.ant-pagination-item:hover) {
+  background-color: unset !important;
+}
+
+.container :global(.ant-pagination-item:focus-visible) {
+  outline: none;
+}
+
+.container :global(.ant-pagination-item-active a) {
+  font-weight: 400;
+  color: var(--color-orange20);
+  border-bottom: 2px solid;
+}
+
+.container :global(.ant-pagination-item-active:hover a) {
+  color: var(--color-orange20);
+}
+
+.ellipsis {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-grey20);
+  padding: 20px 12px;
+  border-bottom: 2px solid var(--color-grey16);
+}

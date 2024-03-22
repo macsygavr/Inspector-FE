@@ -1,0 +1,139 @@
+.offerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.offerHeadBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 32px;
+}
+
+.offerTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.offerTitle {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--color-grey50);
+  max-width: 496px;
+}
+
+.offerSubTitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-grey30);
+  margin: 16px 0px 32px;
+  max-width: 496px;
+}
+
+.offerButton {
+  width: 177px;
+}
+
+.offerInfoCardsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 32px;
+  margin-top: 48px;
+}
+
+.blockTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-grey50);
+  margin: 24px 0px 48px;
+}
+
+.checkedObjectsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardsContainer {
+  display: flex;
+  column-gap: 32px;
+  overflow: auto;
+}
+
+.cardsContainer > a {
+  min-width: 264px
+}
+
+.cardsContainer > div {
+  min-width: 264px
+}
+
+.allObjectsBtn {
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .offerHeadBlock {
+    column-gap: 24px;
+  }
+
+  .offerInfoCardsContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+  }
+
+  .cardsContainer {
+    column-gap: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offerTitle {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .blockTitle {
+    font-size: 20px;
+  }
+
+  .offerHeadBlock {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .offerTextContainer {
+    margin-top: 32px;
+  }
+
+  .offerTitle {
+    max-width: 100%;
+  }
+
+  .offerSubTitle {
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+
+  .offerButton {
+    width: 100%;
+  }
+
+  .revizorIconContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .offerInfoCardsContainer {
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+    margin-top: 32px;
+    padding: 24px 0px;
+  }
+}

@@ -1,0 +1,30 @@
+.customPopover {
+  max-width: 363px;
+  width: 100%;
+}
+
+.customPopover :global(.ant-popover-title) {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-grey50);
+}
+
+.customPopover :global(.ant-popover-inner-content) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-grey30);
+}
+
+.customPopover :global(.ant-popover-arrow) {
+  visibility: hidden;
+}
+
+.customPopover :global(.ant-popover-inner) {
+  box-shadow: 0px 1px 4px rgba(61, 55, 52, 0.08),
+    0px 2px 8px rgba(122, 110, 103, 0.08);
+  border-radius: 16px;
+  min-height: 84px;
+  padding: 16px;
+}

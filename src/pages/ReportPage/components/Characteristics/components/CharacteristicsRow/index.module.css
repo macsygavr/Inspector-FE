@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: repeat-x url(./Line.svg);
+  background-position-y: 14px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.title {
+  color: var(--color-grey20);
+  background-color: #ffffff;
+  padding-right: 16px;
+}
+
+.value {
+  color: var(--color-grey30);
+  background-color: #ffffff;
+  padding-left: 16px;
+}

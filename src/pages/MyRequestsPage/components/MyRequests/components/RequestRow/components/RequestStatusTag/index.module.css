@@ -1,0 +1,34 @@
+.statusTag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statusTag span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 16px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+.blue {
+  color: #6651e0;
+  background-color: #e9e6fa;
+}
+
+.yellow {
+  color: #cc8914;
+  background-color: #faecc8;
+}
+
+.red {
+  color: #e01616;
+  background-color: #fae6e6;
+}
+
+.green {
+  color: #10a311;
+  background-color: #e6faea;
+}

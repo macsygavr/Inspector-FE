@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--color-grey50);
+}
+
+.agentCardsContainer {
+  display: grid;
+  grid-template-columns: calc((100% - 64px) / 3) calc((100% - 64px) / 3) calc(
+      (100% - 64px) / 3
+    );
+  grid-gap: 32px;
+  margin-top: 32px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.inputsContainer {
+  display: flex;
+  gap: 32px;
+}
+
+.inputContainer {
+  width: 264px;
+}
+
+.searchInput::placeholder {
+  padding-left: 20px;
+  color: var(--color-grey20);
+  background: url(./SearchIcon.svg) no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+  .agentCardsContainer {
+    grid-template-columns: calc((100% - 25px) / 2) calc((100% - 25px) / 2);
+    grid-gap: 24px;
+  }
+
+  .filters {
+    gap: 24px
+  }
+
+  .inputsContainer {
+    gap: 24px
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 462px) {
+  .agentCardsContainer {
+    grid-template-columns: 100%;
+    grid-gap: 16px;
+  }
+
+  .filters {
+    gap: 16px
+  }
+
+  .inputsContainer {
+    flex-direction: column;
+    gap: 16px
+  }
+
+  .inputContainer {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

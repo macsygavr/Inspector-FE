@@ -1,0 +1,27 @@
+.chips {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-width: 32px;
+  border-radius: 16px;
+  padding: 6px 12px;
+  cursor: pointer;
+  background: var(--color-grey15);
+  color: var(--color-grey30);
+  border: none;
+  transition-duration: 0s;
+  font-size: 14px;
+}
+
+.chips:global(.ant-tag-checkable-checked) {
+  box-shadow: 0 0 0 0.5px var(--color-orange20);
+}
+
+.chips:global(.ant-tag-checkable-checked):hover {
+  background: var(--color-grey15);
+}
+
+.chips:global(.ant-tag):hover {
+  color: var(--color-grey30);
+}

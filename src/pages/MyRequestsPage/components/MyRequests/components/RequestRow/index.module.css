@@ -1,0 +1,97 @@
+.container {
+  background: var(--color-grey10);
+  border-radius: 16px;
+  min-height: 80px;
+  width: 100%;
+  padding: 16px;
+  overflow: auto;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 6fr 144px;
+  grid-column-gap: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.date {
+  display: flex;
+  width: 74px;
+  color: var(--color-grey30);
+}
+
+.status {
+  display: flex;
+  width: 150px;
+}
+
+.urlContainer {
+  min-width: 148px;
+}
+
+.url {
+  text-decoration: none;
+  text-overflow: ellipsis;
+  color: var(--color-orange20);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.url:hover {
+  color: #d95603;
+}
+
+.reject {
+  border-radius: 0px 0px 16px 16px;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  background: #fae6e6;
+  border-radius: 16px 16px 0px 0px;
+  min-height: 32px;
+  width: 100%;
+  padding: 8px 16px;
+}
+
+.errorText {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #ed5a5a;
+  margin-left: 8px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 16px;
+}
+
+.dateStatusRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.dateStatusRow .status {
+  width: auto;
+}
+
+.button {
+  margin-top: 16px;
+}

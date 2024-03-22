@@ -1,0 +1,49 @@
+{
+  "name": "revizor-client",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "prod": "next start",
+    "start": "next start",
+    "dev:up": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml up",
+    "prod:up": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up"
+  },
+  "keywords": [],
+  "author": "t.me/yourposh",
+  "license": "MIT",
+  "dependencies": {
+    "@pbe/react-yandex-maps": "^1.2.4",
+    "antd": "^5.4.2",
+    "classnames": "^2.3.2",
+    "date-fns": "^2.30.0",
+    "eslint-plugin-deprecate": "^0.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-local": "^1.0.0",
+    "eslint-plugin-postcss-modules": "^2.0.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "final-form": "^4.20.9",
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-final-form": "^6.5.9",
+    "react-input-mask": "^2.0.4",
+    "react-query": "^3.39.3",
+    "react-responsive": "^9.0.2",
+    "typescript": "^5.0.3",
+    "typescript-plugin-css-modules": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.37",
+    "@types/react-input-mask": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-plugin-react": "^7.32.2"
+  }
+}

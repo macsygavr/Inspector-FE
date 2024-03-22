@@ -1,0 +1,52 @@
+.closeIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropUpAndDownIconContainer {
+  background-color: var(--color-grey15);
+  padding-left: 8px;
+}
+
+.smallRevizor > svg {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+}
+
+.mediumRevizor > svg {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+}
+
+.bigRevizor > svg {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .smallRevizor > svg {
+    width: unset;
+    height: unset;
+    visibility: unset;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .mediumRevizor > svg {
+    width: unset;
+    height: unset;
+    visibility: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bigRevizor > svg {
+    width: unset;
+    height: unset;
+    visibility: unset;
+  }
+}

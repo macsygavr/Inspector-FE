@@ -1,0 +1,130 @@
+.generalInfo {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-grey50);
+}
+
+.dot {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-grey20);
+}
+
+.floorSpan {
+  white-space: nowrap;
+}
+
+.addressContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -2px;
+}
+
+.address {
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-orange20);
+}
+
+.priceCardContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background: var(--color-grey10);
+  border-radius: 16px;
+  margin-top: 24px;
+}
+
+.tagContainer {
+  margin-bottom: 4px;
+}
+
+.priceContainer {
+  word-break: break-word;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-grey50);
+}
+
+.pricePerMeter {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-grey20);
+  white-space: nowrap;
+}
+
+.skeletonPriceContainer {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 8px;
+  background: #f7f7f7;
+  padding: 16px;
+  margin-top: 24px;
+  border-radius: 16px;
+}
+
+.soldInfoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContainer {
+  display: flex;
+}
+
+.iconContainer {
+  min-width: 20px;
+}
+
+.title {
+  color: var(--color-grey50);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: var(--color-grey20);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .priceContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .generalInfo {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .priceContainer {
+    display: initial;
+  }
+
+  .price {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,22 @@
+.navMenuContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.navMenuButton {
+  padding: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .navMenuButton {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navMenuButton {
+    padding: 8px;
+  }
+}

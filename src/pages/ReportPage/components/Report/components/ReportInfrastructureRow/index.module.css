@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  column-gap: 8px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  min-width: 50%;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-grey30);
+}
+
+.grade {
+  color: var(--color-grey20);
+}
+
+.tooltipIcon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin-top: 24px;
+  }
+
+  .titleContainer {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .progressBarContainer {
+    margin-top: 8px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 2;
+  border-bottom: 1px solid var(--color-grey16);
+}
+
+.logo {
+  padding: 0 64px;
+  display: flex;
+  align-items: flex-end;
+  height: 32px;
+}
+
+.checkButton {
+  display: flex;
+  padding: 0 64px;
+  column-gap: 16px;
+}
+
+.loginBtn {
+  padding: 0;
+}
+
+.profileBtn {
+  padding: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    padding: 0 32px;
+  }
+
+  .checkButton {
+    padding: 0 32px;
+  }
+
+  .navMenuContainer {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .header {
+    height: 64px;
+  }
+
+  .logo {
+    width: 92px;
+    margin: 0 16px;
+    padding: 0;
+  }
+
+  .checkButton {
+    padding: 0 16px 0 0;
+  }
+}

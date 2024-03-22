@@ -1,0 +1,25 @@
+.customInput {
+  width: 100% !important;
+  padding: 14px 16px;
+  height: 48px;
+  border-radius: 16px;
+  background: var(--color-grey15);
+  border: unset;
+  box-shadow: unset !important;
+  cursor: text;
+  transition: 0s;
+}
+
+.customInput :focus::placeholder {
+  opacity: 0;
+}
+
+.customInput :global(.ant-input) {
+  text-overflow: ellipsis;
+  background-color: var(--color-grey15);
+  color: var(--color-grey30);
+}
+
+:global(.ant-select-open) .customInput {
+  border-radius: 16px 16px 0px 0px;
+}
